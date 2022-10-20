@@ -1,0 +1,126 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    height: 70px;
+    display: flex;
+    padding: 20px 36px;
+    box-shadow: 0px 2.98px 7.456px rgba(0, 0, 0, 0.1);
+}
+
+.nav--logo {
+    max-width: 100px;
+}
+
+section {
+    padding: 20px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero--image {
+    max-width: 400px;
+    align-self: center;
+}
+
+.hero--header {
+    margin-bottom: 16px;
+}
+
+.hero--text {
+    margin-top: 0;
+}
+
+.grey {
+    color: #918E9B;
+}
+
+.card {
+    width: 175px;
+    font-size: 12px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.card--image {
+    width: 100%;
+    border-radius: 9px;
+}
+
+.card--stats {
+    display: flex;
+    align-items: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.card-stars {
+    height: 14px;
+}
+
+/***********************contacts************************/
+.contact-card {
+    max-width: 350px;
+    min-width: 250px;
+    width: 20%;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0px 2.98px 7.456px rgba(0, 0, 0, 0.478);
+    border-radius: 15px;
+}
+
+.contact-card--img {
+    width: 100%;
+}
+
+.contact-card h3 {
+    margin-bottom: 15px;
+}
+
+.info-group {
+    display: flex;
+    align-items: center;
+    line-height: 0;
+}
+
+.info-group p {
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*******************************************************/
+
+.card-contents {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card-badge {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-color: white;
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-weight: bold;
+}

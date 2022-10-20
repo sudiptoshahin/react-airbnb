@@ -1,25 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import './styles.css';
+import Navbar from "./components/Navbar";
+import Hero from './components/Hero';
+import Card from './components/Card';
+import Contact from "./components/Contact";
+import data from './data';
+import contacts from './contacts-data';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends React.Component {
+
+  render() {
+
+    const cards = data.map((item) => {
+      return (
+        <Card
+          key={item.id}
+          item={item} />
+      );
+    });
+
+    const contactCards = contacts.map(contact => {
+      return (
+        <Contact
+          key={contact.id}
+          img={contact.image}
+          name={contact.name}
+          phone={contact.phone}
+          email={contact.email} />
+      );
+    });
+
+    return (
+      <div className="container">
+        <Navbar />
+
+        <Hero />
+
+        {/* ALL CARDS  */}
+        <div className="card-contents">
+          {cards}
+        </div>
+
+        <div className="content">
+          { contactCards }
+        </div>
+
+      </div>
+    );
+  }
 }
-
-export default App;
